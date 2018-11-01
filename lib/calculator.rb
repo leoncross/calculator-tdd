@@ -1,10 +1,10 @@
 class Calculator
 
-  def add(a, b)
-    if a.class == String || b.class == String
+  def add(a, b, c = 0, d = 0)
+    if a.class == String || b.class == String || c.class == String || d.class == String
       return "Please enter two numbers"
     else
-      return a + b
+      return a + b + c + d
     end
   end
 
@@ -12,12 +12,9 @@ class Calculator
     a - b
   end
 
-  def add_multiple(array)
-  end
-
 end
 
 
-calculator = Calculator.new
-p calculator.add(1, 2)
-p calculator.add("test", "testa")
+# calculator = Calculator.new
+# p calculator.add(1, 2)
+# p calculator.add("test", "testa")

@@ -21,9 +21,14 @@ describe Calculator do
     expect(subject.add("test", "testb")).to eq "Please enter two numbers"
   end
 
-  it "allows the addition of an array of integers" do
-    expect(subject).to respond_to(:add_multiple).with(1).arguments
+  it "allows the addition of 3 numbers" do
+    expect(subject).to respond_to(:add).with(3).arguments
   end
+
+  it "multiplies 3 numbers" do
+    expect(subject.add(2,2,5)).to eq 9
+  end
+
 
 
 end
